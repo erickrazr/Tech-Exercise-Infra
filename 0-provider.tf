@@ -3,6 +3,14 @@ provider "aws" {
 }
 
 terraform {
+  cloud {
+    organization = "erickrazr"
+
+    workspaces {
+      name = "Tech-Exercise-wks"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,3 +18,4 @@ terraform {
     }
   }
 }
+
