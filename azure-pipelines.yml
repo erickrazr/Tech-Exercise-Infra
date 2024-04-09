@@ -26,7 +26,7 @@ stages:
 
     - script: |
         echo "Executing Terraform Plan..."
-        terraform plan -out=tfplan
+        terraform plan -out=tfplan -var 'AWS_ACCESS_KEY_ID=$(aws-access-key)' -var 'AWS_SECRET_ACCESS_KEY=$(aws-secret-key)'
       displayName: 'Terraform Plan'
       continueOnError: true # This allows the pipeline to continue even if this step "fails"
       
