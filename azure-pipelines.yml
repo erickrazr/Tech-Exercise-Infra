@@ -9,10 +9,10 @@ pool:
 
 stages:
 - stage: EKS
-  displayName: 'EKS Infra'
+  displayName: 'Environment Infra'
   jobs:
   - job: TerraformApply
-    displayName: 'EKS Deployment'
+    displayName: 'EKS and MongoDB'
     steps:
     - task: TerraformInstaller@0
       inputs:
