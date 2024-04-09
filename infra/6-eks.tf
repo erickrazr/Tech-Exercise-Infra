@@ -23,7 +23,7 @@ resource "aws_iam_role_policy_attachment" "demo-AmazonEKSClusterPolicy" {
 }
 
 variable "cluster_name" {
-  default = "wiz-demo"
+  default = "demo"
   type = string
   description = "AWS EKS CLuster Name"
   nullable = false
