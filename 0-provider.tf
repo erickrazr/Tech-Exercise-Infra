@@ -7,7 +7,7 @@ terraform {
     organization = "erickrazr"
 
     workspaces {
-      name = "Tech-Exercise-wks"
+      name = "Tech-Ex-Infra"
     }
   }
 
