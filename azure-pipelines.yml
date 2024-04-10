@@ -12,7 +12,7 @@ stages:
   displayName: 'Environment Infra'
   jobs:
   - job: TerraformApply
-    displayName: 'EKS and MongoDB'
+    displayName: 'EKS - MongoDB - S3'
     steps:
     - task: TerraformInstaller@0
       inputs:
