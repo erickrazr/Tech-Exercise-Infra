@@ -14,7 +14,7 @@ data "aws_iam_policy_document" "read_access" {
       identifiers = ["*"]
     }
     actions   = ["s3:GetObject"]
-    bucket = "arn:aws:s3:::wte-mongo-backup"
+    resources = ["arn:aws:s3:::wte-mongo-backup"]
   }
 }
 
