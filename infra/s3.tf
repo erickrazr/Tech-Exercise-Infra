@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1" # You can change this to your preferred AWS region
-}
-
 resource "aws_s3_bucket" "wte-mongo-bkp" {
   bucket = "wte-mongo-bkp" # Ensure this name is globally unique
   acl    = "public-read"      # This makes the bucket publicly readable
