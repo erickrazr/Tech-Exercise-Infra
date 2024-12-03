@@ -9,7 +9,7 @@ terraform {
     organization = "erickrazr"
 
     workspaces {
-      name = "Tech-Ex-Infra"
+      name = "DemoCnapp"
     }
   }
 
