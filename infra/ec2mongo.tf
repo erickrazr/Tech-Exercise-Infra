@@ -61,7 +61,7 @@ resource "aws_network_interface" "mongoInterface" {
 }
 
 data "aws_iam_role" "ec2_full_role" {
-  name = "EC2-FULL"
+  name = "EC2-AdminAccess"
 }
 
 resource "aws_iam_instance_profile" "ec2_full_profile" {
