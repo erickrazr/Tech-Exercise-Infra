@@ -32,7 +32,7 @@ resource "aws_security_group" "MongoCentosSG" {
 resource "aws_instance" "mongodb_instance" {
   iam_instance_profile = aws_iam_instance_profile.ec2_full_profile.name
   instance_type          = "t2.medium"
-  ami                    = "ami-09a7b0709b6a96407"
+  ami                    = "ami-005fc0f236362e99f"
   key_name               = "eferreira-kp-useast1"
 
   network_interface {
