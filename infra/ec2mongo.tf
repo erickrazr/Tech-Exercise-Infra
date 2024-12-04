@@ -46,7 +46,7 @@ resource "aws_instance" "mongodb_instance" {
     volume_size = 20
   }
   tags = {
-    Name = "eferreira-kp-useast1"
+    Name = "MongoDB-Demo"
   }
 }
 
