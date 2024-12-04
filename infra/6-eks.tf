@@ -31,7 +31,7 @@ variable "cluster_name" {
 
 resource "aws_eks_cluster" "demo" {
   name     = var.cluster_name
-  role_arn = aws_iam_role.demo.
+  role_arn = aws_iam_role.demo.arn
   cluster_version = "1.29"
 
   vpc_config {
