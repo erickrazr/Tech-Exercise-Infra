@@ -34,6 +34,7 @@ resource "aws_instance" "mongodb_instance" {
   instance_type          = "t2.medium"
   ami                    = "ami-005fc0f236362e99f"
   key_name               = "eferreira-kp-useast1"
+  user_data = file("mongo5_install.sh")
 
   network_interface {
      network_interface_id = "${aws_network_interface.mongoInterface.id}"
